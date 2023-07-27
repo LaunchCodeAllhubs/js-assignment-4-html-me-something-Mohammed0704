@@ -1,26 +1,37 @@
 <!DOCTYPE html>
 <html>
    <head>
-      <title>Mohammed's Website </title>
+      <title>Mohammed - Places Traveled </title>
+      <link rel="stylesheet" href="styles.css">
    </head>
    <body>
       <!-- Write your HTML in this file! -->
       <header>
-         <h1>Places Traveled</h1>
+         <h1 id="mainHeading">Places Traveled</h1>
+      
+         <nav>
+            <ul>
+               <li><a href="#usa"> Philadelphia, PA, USA</a></li>
+               <li><a href="#italy"> Rome, Italy</a></li>
+               <li><a href="#egypt"> Cairo, Egypt</a></li>
+               <li><a href="#pakistan"> Abbottabad, Pakistan</a></li>
+            </ul>
+         </nav>
       </header>
 
       <main>
-         <p>I have been to four continents, and my goal is to visit each one. 
-            So far, I have been to:
-         </p>
+         <p id="testP" class="funParagraph">Throughout my life, I  have been able to travel to many different continents. So far, I have been to four out of the six
+            main continents you can travel to, excluding Antartica.
+            The following are the continents I have been to:
          <ul>
             <li>North America</li>
             <li>Europe</li>
             <li>Africa</li>
             <li>Asia</li>
          </ul>
+         </p>
          <p>
-            The countries I have visited are the following:
+         Within each continent I have visited the following countries:
          </p>
          <ul>
             <li>USA</li>
@@ -28,43 +39,49 @@
             <li>Egypt</li>
             <li>Pakistan</li>
          </ul>
+         <p>I hope one day to travel to all seven continents if possible. For now, here is a summary of my expereince visting the following countries. </p>
          
          <article>
-            <!-- Talk about time in USA-->
-            <h2>Philly, USA</h2>
-            <p>I was born and raised in Philadelphia, PA and have lived here all of my life.
-               My mother migrated here from Egypt. I love the city and I am a big fan of the sports teams.
-            </p>
-            <img src="images/philly.jpg">
-         </article>  
+            <section> <!-- Talk about time in USA-->
+               <h2 id="usa">Philadelphia, PA, USA</h2>
+               <p>I was born and raised in Philadelphia, PA and have lived here all of my life.
+                  My mother migrated here from Egypt. I love the city and I am a big fan of the sports teams.
+               </p>
+               <img src="images/philly.jpg">
+            </section>  
 
-         <article>
-            <!-- Talk about time in Italy-->
-            <h2>Rome, Italy</h2>
-            <p>My dad lives in Rome, Italy so I went to go visit him one summer. I believe it was almost
-               10 years ago so I don't remember much. However, there are of course places that I could
-               never forget visiting like the Colosseum and Trevi Fountain.
-            </p>
-            <img src="images/colosseum.jpeg">
-            <img src="images/trevi_fountain.jpeg">
-         </article>
+            <section> <!-- Talk about time in Italy-->
+               <h2 id="italy">Rome, Italy</h2>
+               <p>My dad lives in Rome, Italy so I went to go visit him one summer. I believe it was almost
+                  10 years ago so I don't remember much. However, there are of course places that I could
+                  never forget visiting like the Colosseum and Trevi Fountain. Overall, Rome is a beautiful city
+                  and I would hope to visit again one day.
+               </p>
+               <div class="row">
+                  <div class="column">
+                     <img id="SideImage" src="images/colosseum.jpeg">
+                  </div>
+                  <div class="column">
+                     <img id="SideImage" src="images/trevi_fountain.jpeg">
+                  </div>
+               </div>
+            </section>
 
-         <article>
-            <!-- Talk about time in Egypt-->
-            <h2>Cairo, Egypt</h2>
-            <p>I went to Egypt to visit my family. I have a lot of family there and have been there times so I was able to visit
-               a lot of places. My most recent visit way in 2021. I went to the pyramids, the Egyptian museum, and the Nile River.
-            </p>
-            <img src="images/pyramids.jpeg">
-         </article>
+            <section> <!-- Talk about time in Egypt-->
+               <h2 id="egypt">Cairo, Egypt</h2>
+               <p>I went to Egypt to visit my family. I have a lot of family there and have been there 3 times so I was able to visit
+                  a lot of places. My most recent visit way in 2021. I went to the pyramids, the Egyptian museum, and the Nile River.
+               </p>
+               <img src="images/pyramids.jpeg">
+            </section>
 
-         <article>
-         <!-- Talk about time in Pakistan-->
-         <h2>Abbottabad, Pakistan</h2>
-         <p>I have only been to Pakistan once and it was for my sister's weeding in 2017. I did enjoy my time there
-            and one difference I can tell when visiting Pakistan is that there are a lot of moutains.
-         </p>
-         <img src="images/pakistan.jpeg">
+            <section> <!-- Talk about time in Pakistan-->
+               <h2 id="pakistan">Abbottabad, Pakistan</h2>
+               <p>I have only been to Pakistan once and it was for my sister's weeding in 2017. I did enjoy my time there
+                  and one difference I can tell when visiting Pakistan is that there are a lot of moutains.
+               </p>
+               <img src="images/pakistan.jpeg">
+            </section>
          </article>
       </main>
 
